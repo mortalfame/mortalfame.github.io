@@ -55,7 +55,8 @@ function loadGame () {
 
 function initGame() {
     //BABYLON.Mesh.CreateSphere("sphere", 10, 1, scene);
-    intiMap();
+    //intiMap();
+    addTank();
     //var box = BABYLON.Mesh.CreateBox("Box",4.0,scene);
 }
 
@@ -83,4 +84,23 @@ function intiMap() {
 function addBlock(i, j){
     var box = BABYLON.Mesh.CreateBox("Box",1.0,scene);
     box.setPositionWithLocalVector(new BABYLON.Vector3(i, j, 0));
+}
+
+function addTank(){
+    var tankMaterial = new BABYLON.StandardMaterial("tankMaterial", scene);
+    tankMaterial.diffuseColor = new BABYLON.Color3(0, 0.58, 0.86);
+
+    var BL = BABYLON.Mesh.CreateBox("Box1",1.0,scene);
+    BL.scaling.z = 4;
+    BL.setPositionWithLocalVector(new BABYLON.Vector3(0, 0, 0));
+
+    var BM = BABYLON.Mesh.CreateBox("Box2",1.0,scene);
+    BM.setPositionWithLocalVector(new BABYLON.Vector3(1, 0, 0));
+    BM.scaling.z = 4;
+    BM.scaling.x = 2;
+    BM.material = tankMaterial;
+
+    var BR = BABYLON.Mesh.CreateBox("Box",1.0,scene);
+    BR.scaling.z = 4;
+    BR.setPositionWithLocalVector(new BABYLON.Vector3(3, 0, 0));
 }
