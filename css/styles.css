@@ -7,9 +7,9 @@
     --bold-font: 700;
     --bolder-font: 900;
     --bg-color: #fcfcfc;
-    --primary-color: #4756df;
+    --primary-color: #2a2a2b;
     --secondary-color: #ff7235;
-    --primary-shadow: #8b8eaf;
+    --primary-shadow: #141414;
     --secondary-shadow: #a17a69;
     --bottom-margin: 0.5rem;
     --bottom-margin-2: 1rem;
@@ -123,7 +123,7 @@
   
   .project-pic {
     width: 65%;
-    height: 60%;
+    height: 65%;
   }
   
   .projects-container {
