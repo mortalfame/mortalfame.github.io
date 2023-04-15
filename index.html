@@ -1,135 +1,126 @@
-<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mortalfame</title>
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/mortalfame.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/mortalfame.png"
+    />
 
-    <!-- fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Mortalfame | Mobile Games</title>
+  </head>
 
-    <script async>(function(w, d) { w.CollectId = "5ce8dec28f67e35237461808"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+  <body>
+    <!-- Navbar -->
+
+    <nav>
+        <h1>Mortalfame</h1>
+        <ul class="navigation">
+          <!--<li><a href="#games" class="nav-link">Games</a></li> -->
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+  </nav>
+
+  <section class="projects" id="projects">
+    <div class="projects-container">
     
-</head>
+      <div class="project-container project-card" >
+        <img
+          src="img/hex.png"
+          alt="Hex Color Sort Puzzle"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Hex Color Sort Puzzle</h3>
+        <p class="project-details">
+            A color sorting puzzle game to sort colored triangular blocks to fill hexagons.
+        </p>
+        <a href="https://play.google.com/store/apps/details?id=com.mortalfame.hexcolorfill" target="_blank" class="project-link">Check it Out</a>
+      </div>
 
-<body>
+      <div class="project-container project-card">
+        <img
+          src="img/unscramble.png"
+          alt="Unscramble"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Unscramble</h3>
+        <p class="project-details">
+            Unscramble words to solve the word puzzle game.
+        </p>
+        <a href="https://play.google.com/store/apps/details?id=com.mortalfame.unscramble" target="_blank" class="project-link">Check it Out</a>
+      </div>
 
-    <div class="loader">
-        <div>
-            <img src="img/preloader.gif" />
-        </div>
+      <div class="project-container project-card">
+        <img
+          src="img/volcannon.jpg"
+          alt="Volcannon"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Volcannon</h3>
+        <p class="project-details">
+            Fight the erupting volcano using your cannon to save your castle.
+        </p>
+        <a href="https://play.google.com/store/apps/details?id=com.mortalfame.volcannon" target="_blank" class="project-link">Check it Out</a>
+      </div>
+
     </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-5 left-wrapper">
-                <div class="event-banner-wrapper">
-                    <div class="logo">
-                         <!--<h1>Mortalfame</h1>-->
-                    </div>
-
-                    <h2>
-                        Mortalfame
-                    </h2>
-                </div>
-            </div>
-            <div class="col-sm-7 right-wrapper">
-                <div class="event-ticket-wrapper">
-
-                    <div class="event-tab">
-
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#games" aria-controls="games" role="tab"
-                                    data-toggle="tab">Games</a></li>
-
-                        </ul>
-
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane fade in active" id="games">
-                                <div class="row">
-
-
-                                    <div class="col-md-6">
-                                        <div class="ticketBox" data-ticket-price="50000">
-                                            <div class="inactiveStatus"></div>
-
-                                            <div class="row">
-                                                <div class="col-xs-6">
-                                                    <div class="ticket-name">
-                                                        <h3>Volcannon</h3>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-xs-6">
-                                                    <div class="ticket-price-count-box">
-                                                        <div class="ticket-control">
-                                                            <div class="input-group">
-                                                                <span class="input-group-btn">
-                                                                    <a href="https://play.google.com/store/apps/details?id=com.mortalfame.volcannon" target="_blank">
-                                                                    <img src="img/android128.png"
-                                                                        class="img-thumbnail" />
-                                                                    </a>
-                                                                </span>
-                                                                <!-- <span class="input-group-btn">
-                                                                    <a href="https://apps.apple.com/us/app/volcannon/id1458273476" target="_blank">
-                                                                    <img src="img/apple128.png" class="img-thumbnail" />
-                                                                    </a>
-                                                                </span> -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="ticket-description">
-                                                <div class="row">
-                                                        <div class="col-xs-6">
-                                                            <img src="img/volcannon.jpg"
-                                                                class="img-thumbnail" />
-                                                        </div>
-                                                        <div class="col-xs-6">
-                                                            <p>Fight the erupting volcano to save your castle</p>
-                                                        </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                    <!---kkskd-->    
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+    <div class="projects-container">
+  
+        <div class="project-container project-card">
+          <img
+            src="img/drone.png"
+            alt="Car Hunter Drone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Car Hunter Drone</h3>
+          <p class="project-details">
+              Hunt down rash driving cars using your drone's sniper.
+          </p>
+          <a href="https://play.google.com/store/apps/details?id=com.mortalfame.dronesniper" target="_blank" class="project-link">Check it Out</a>
         </div>
-    </div>
 
+        <div class="project-container project-card">
+            <img
+              src="img/path.png"
+              alt="Path Smash"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Path Smash</h3>
+            <p class="project-details">
+                Rush through the zigzag path smashing obstacles and collecting coins.
+            </p>
+            <a href="https://play.google.com/store/apps/details?id=com.mortalfame.path" target="_blank" class="project-link">Check it Out</a>
+          </div>
+  
+      </div>
 
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/allscript.js"></script>
-</body>
-
+  </section>
+    
+  </body>
 </html>
